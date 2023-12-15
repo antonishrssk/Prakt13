@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="FLGRUS.ICO" />
+    <None Remove="open.ico" />
+    <None Remove="save.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibMas\LibMas.csproj" />
+    <ProjectReference Include="..\Lib_4\Lib_4.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="open.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="FLGRUS.ICO" />
+    <Resource Include="save.ico" />
+  </ItemGroup>
+
+</Project>
